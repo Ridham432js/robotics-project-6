@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {background-color: yellow;}
+			h1   {color: black;}
+			p {color: black;}
+		</style>
+	</head>
+	<body>
 
+		<h1>Team E-Motion</h1>
+		<p>We are a robotics team based in San Diego California, from a high school called Rancho Bernardo High School.</p>
+		<label for="Name">username:</label>
+		<input type="text" id="username"
+			   name="Name" placeholder="enter name">
+		<label for="Name">password</label>
+		<input type="text" id="pass"
+			   name="Name" placeholder="enter email">
+		<input id="contact" type="submit" value="Send Request"/>
+		<h2>Subteams</h2>
+		<h3>Build</h3><h3>Electrical</h3><h3>Design</h3><h3>Software<h3>Marketing</h3>		
+		<script>
+			let username = document.getElementById("username").value;
+			let pass = document.getElementById("pass").value;
+			if(username == "rbhs"){
+				if(pass == "bye"){
+					window.open("https://www.team2658.org/about");
+				}
+			}
+		</script>
+	</body>
+</html>
